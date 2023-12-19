@@ -36,25 +36,6 @@ const i18n = new VueI18n({
           document.querySelector('.loading-screen').style.display = 'none';
         }, 2000);
       },
-      async submitForm() {
-        try {
-          const response = await axios.post('http://127.0.0.1:5500/send-email', {
-            name: this.name,
-            email: this.email,
-            subject: this.subject,
-            message: this.message
-          });
-          console.log(response.data); // Handle response from backend
-          // Reset form fields after successful submission
-          this.name = '';
-          this.email = '';
-          this.subject = '';
-          this.message = '';
-        } catch (error) {
-          console.error('Error sending email:', error);
-          // Handle error or show a message to the user
-        }
-      },
       calculateYearsExperience() {
         let yearsExperienceDOM = document.querySelector('.yearsExperience');
         let dateNow = new Date();
