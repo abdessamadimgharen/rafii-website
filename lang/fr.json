@@ -1,0 +1,168 @@
+{
+    "navbar": {
+        "link_1": "accueil",
+        "link_2": "À propos",
+        "link_3": "services",
+        "link_4": "contact"
+    },
+    "home":{
+        "title":"Bienvenue chez RAFII : Leaders de l'Innovation Laitière",
+        "desc":"Rafii : Votre destination pour une révolution laitière. En tant que leaders de l'innovation, nous redéfinissons l'industrie avec des solutions laitières avant-gardistes et une expertise inégalée.",
+        "plus-content":"Descendre pour plus"
+    },
+    "about-us": {
+        "head-fix":"À propos de nous",
+        "title":"Découvrez Notre Usine Laitière & Notre Histoire",
+        "experience": {
+            "span_1": "années",
+            "span_2": "D'EXPÉRIENCE"
+        },
+        "about-content":"La société d’Industrie de Lait et ses Dérivés d’Agadir (SILDA) est une société à responsabilité limitée SARL qui a été créée en 1999 par deux associés Mr. BRAHIM BENABBOU et Mr. ABDELAZIZ ELBOUBKRAOUI avec un capital de 4.000.000 de dirhams, Pendant cette période entre la création et le début d’activité, les associées ont construit l’usine qui va se charger de la production et l’administration, ils ont mis en place l’ensemble les matériels nécessaires pour la production et la commercialisation des produits laitiers. La société a connu un progrès au cours des 25 années à partir de sa création, la chose qui se manifeste par le développement de sa gamme des produits, aussi elle se manifeste dans l’investissement aux nouveaux équipements et machines pour augmenter sa production. SILDA se situe dans Lot Admin d’Ait Melloul."
+    },
+    "why-us": {
+        "section-1": {
+            "head-fix":"POURQUOI NOUS!!",
+            "title":"Les Raisons Pour Lesquelles Nos Clients Nous Préfèrent !",
+            "desc": "Des services exceptionnels et une expertise fiable font de nous le choix évident pour répondre à vos besoins uniques",
+            "reasons": {
+                "reason_1": {
+                    "reason":"ans d'expérience",
+                    "reason-content":"Des décennies dédiées à perfectionner notre expertise dans l'artisanat laitier."
+                },
+                "reason_2": {
+                    "reason":"Processus naturel",
+                    "reason-content":"Fabriqué à travers un processus naturel authentique et durable."
+                },
+                "reason_3": {
+                    "reason":"Produits biologiques",
+                    "reason-content":"Produit en utilisant des méthodes pures et biologiques pour un bienfait complet."
+                },
+                "reason_4": {
+                    "reason":"Sûr sur le plan biologique",
+                    "reason-content":"Garantissant des pratiques biologiquement sûres pour votre bien-être."
+                }
+            }
+        },
+        "section-2":{
+            "part_1": {
+                "title":"Nous vendons les meilleurs produits laitiers",
+                "desc": "À la pointe de la production laitière, nous livrons du lait frais à travers tout le Maroc, garantissant qualité et fraîcheur à chaque étape."
+            },
+            "part_2": {
+                "title":"Nous livrons du lait frais partout au Maroc",
+                "desc": "Atteignant l'excellence dans l'industrie laitière, nos produits de premier choix sont disponibles pour vous, garantissant une qualité supérieure et un goût inégalé."
+            }
+        }
+    },
+    "our-services": {
+        "head-fix":"NOS SERVICES",
+        "title":"Soins attentifs & Traite précise : Confection de produits laitiers de qualité supérieure",
+        "desc":"Chaque goutte est traitée avec soin, garantissant des produits laitiers d'une excellence inégalée à chaque étape de notre processus de production",
+        "services":{
+            "service_1":{
+                "title":"Excellence dans la Sélection optimale des animaux",
+                "desc":"Nous choisissons méticuleusement nos animaux pour garantir la meilleure qualité de lait."
+            },
+            "service_2":{
+                "title":"Élevage & Vétérinaire d'Excellence",
+                "desc":"Notre engagement envers l'élevage de qualité et les soins vétérinaires assurent la santé et le bien-être de nos animaux."
+            },
+            "service_3":{
+                "title":"Soins & Processus de Traite Attentionné",
+                "desc":"Nous accordons une attention particulière à chaque étape du processus de traite pour vous offrir des produits laitiers de la plus haute qualité."
+            }
+        }
+    },
+    "products": {
+        "head-fix":"NOS PRODUITS POPULAIRES",
+        "desc":"Découvrez notre gamme de produits populaires, conçus pour allier qualité, fonctionnalité et style",
+        "button":"Autres Produits"
+    },
+    "team":{
+        "head-fix":"NOTRE ÉQUIPE",
+        "desc":"Notre équipe incarne l'expertise et la passion, unie pour atteindre nos objectifs communs.",
+        "members":{
+            "member_1":{
+                "name":"Yassine Imgharen",
+                "job":"Directure Des Achats"
+            },
+            "member_2":{
+                "name":"Abde Imgharen",
+                "job":"Education Management Professional"
+            },
+            "member_3":{
+                "name":"Mohamed Nom",
+                "job":"Civil Enginee"
+            }
+        }
+    },
+    "testimonials":{
+        "head-fix":"TÉMOIGNAGES DE NOS CLIENTS",
+        "desc":"Les histoires de nos clients sont le témoignage de notre engagement inébranlable envers l'excellence et la qualité.",
+        "testimonial_1":{
+            "comment":"Produits d'une fraîcheur inégalée ! Chaque bouchée est une explosion de saveurs authentiques.",
+            "name":"Fatima Ali"
+        },
+        "testimonial_2":{
+            "comment":"La fraîcheur est palpable dans chaque produit, une véritable délectation pour les papilles.",
+            "name":"Abdessamad Imgh"
+        },
+        "testimonial_3":{
+            "comment":"Des produits toujours frais, véritable gage de qualité et de satisfaction à chaque dégustation.",
+            "name":"Amina Wifaq"
+        },
+        "testimonial_4":{
+            "comment":"La fraîcheur de vos produits est incomparable, offrant une expérience gustative exceptionnelle à chaque fois.",
+            "name":"Zahra bouchra"
+        }
+    },
+    "contact-data":{
+        "title":"Données de contact",
+        "address":"86150, Ait Melloul 86150",
+        "quickLinks":"Liens Rapides",
+        "openning":{
+            "title": "Heures d'ouverture",
+            "days":"Lundi à Vendredi",
+            "time":"09:00-18:00",
+            "closed":"Dimanche",
+            "closedText":"Fermé"
+        }
+    },
+    "footer":{
+        "copyrights": {
+            "part-1":"RAFII",
+            "part-2":"Tous droits réservés."
+        },
+        "designed":{
+            "part-1":"Conception par",
+            "part-2":"Abdessamad Imgharen",
+            "part-3":" Distribué par ",
+            "part-4":"RAFII"
+        }
+    },
+    "contact-section":{
+        "head-fix":"Restons en Contact",
+        "desc":"Des questions ? Contactez-nous directement via nos réseaux sociaux !",
+        "back-button":"RETOUR À L'ACCUEIL",
+        "whatsapp": {
+            "title" :"WhatsApp",
+            "desc":"Connectez-vous avec nous sur WhatsApp pour des réponses rapides",
+            "button":"Commencer le chat"
+        },
+        "facebook": {
+            "title" :"Facebook",
+            "desc":"Rejoignez notre communauté sur Facebook pour des mises à jour",
+            "button":"Visiter la page"
+        },
+        "email": {
+            "title" :"Email",
+            "desc":"Envoyez-nous un e-mail pour des demandes et du support",
+            "button":"Envoyer un e-mail"
+        },
+        "instagram": {
+            "title" :"Instagram",
+            "desc":"Suivez-nous sur Instagram pour des mises à jour visuelles",
+            "button":"Suivre"
+        }
+    }
+}

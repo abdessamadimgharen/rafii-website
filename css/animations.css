@@ -1,0 +1,14 @@
+.descendre{animation:scroll-down 1s infinite alternate}
+@keyframes scroll-down {100% {transform: translateY(-3px);}}
+.bottle{animation:swayAndRotate 1.5s infinite alternate;}
+@keyframes swayAndRotate   {0% {transform: rotate(0) translateY(0);}25% {transform: rotate(-2deg) translateY(-2px);}50% {transform: rotate(0) translateY(0);}75% {transform: rotate(2deg) translateY(-2px);}100% {transform: rotate(0) translateY(0);}}.contact-img{animation: zoom 1.5s infinite alternate;}
+.contact-img{animation: move-right 1.5s infinite alternate;}
+@keyframes move-right {100% {transform: translateX(-15px)}}
+.back-icon{animation: move-left 1s infinite alternate;}
+@keyframes move-left {100% {transform: translateX(-5px)}}
+.loading-screen span {width: 30px;height: 30px;animation: up-down .9s  infinite alternate;}
+@keyframes up-down {100% {transform: translateY(-20px);}}
+#scrollToTopBtn {animation:move-up 0.8s infinite alternate}
+@keyframes move-up{50%{transform: translateY(-5px);}100%{transform: translateY(0px);}}
+.headEffect::after {content:'';position: absolute;width: 30px;height:3px;background:var(--thirdColor);top:50%; transform: translateY(-50%);margin-left: 10px;animation: top-bottom 1s alternate infinite;}
+@keyframes  top-bottom  {100%{transform: translateY(-5px);}}

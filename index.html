@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="La société d'Industrie de Lait et ses Dérivés d'Agadir (SILDA) est une société à responsabilité limitée SARL qui a été créée en 1999 par deux associés Mr.">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css.map">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/move-wave.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue-i18n@8.26.4/dist/vue-i18n.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/logo.png">
+        <title>RAFII : Innovateur Majeur de l'Industrie Laitière au Maroc depuis 1999</title>
+        <!-- Google Font "Poppins" -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app" >
+            <div class="loading-screen">
+                    <span class="mainBg rounded-circle"></span>
+                    <span class="mainBg rounded-circle"></span>
+                    <span class="mainBg rounded-circle"></span>
+            </div>
+            <!-- Start Navbar  -->
+            <nav class="navbar navbar-expand-lg navbar-light mainBg fixed-top">
+                <div class="container">
+                <a href="index.html" class="navbar-brand fs-1 brand-font rounded-circle">
+                    <span class="fw-bold text-white">R</span>afii<i class="fa-solid fa-leaf text-white fs-4"></i>
+                </a>
+                <button
+                    class="navbar-toggler "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#main-nav"
+                    aria-controls="main-nav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div
+                    class="collapse navbar-collapse justify-content-end align-center"
+                    id="main-nav"
+                >
+                    <ul class="navbar-nav ul-list" :class="{'flex-row-reverse':selectedLanguage === 'ar' }">
+                        <li class="nav-item px-3 position-relative fit-width">
+                            <a href="#home" class="nav-link custom-hover-effect text-white text-uppercase">{{ $t('navbar.link_1') }}</a>
+                        </li>
+                        <li class="nav-item px-3 position-relative fit-width">
+                            <a href="#a-propos" class="nav-link custom-hover-effect text-white text-uppercase">{{ $t('navbar.link_2') }}</a>
+                        </li>
+                        <li class="nav-item px-3 position-relative fit-width">
+                            <a href="#services" class="nav-link custom-hover-effect text-white text-uppercase">{{ $t('navbar.link_3') }}</a>
+                        </li>
+                        <li class="nav-item px-3 position-relative fit-width">
+                            <a href="contact.html" class="nav-link custom-hover-effect text-white text-uppercase">{{ $t('navbar.link_4') }}</a>
+                        </li>
+                        <li class="nav-item px-3 position-relative fit-width d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-globe text-white"></i>
+                                <select v-model="selectedLanguage" @change="changeLanguage" class="form-select form-select-sm mainBg text-white border-0" aria-label="Small select example">
+                                    <option value="fr">FR</option>
+                                    <option value="ar">AR</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+            <!-- End Navbar  -->
+            <!-- Start Home page -->
+            <section id="home" class="section mainBg overflow-hidden">
+                <div class="container pb-5">
+                    <div class="row justify-content-center align-items-center pb-4 pt-lg-4">
+                        <div class="col-md-8 col-lg-5 text-center text-lg-start mb-sm-5 py-5">
+                            <h1  class="text-white fw-bold ar-rlt">{{ $t('home.title') }}
+                            </h1>
+                            <p class="text-white ar-rlt">{{ $t('home.desc') }}
+                            </p>
+                            <span class="thirdColor">{{ $t('home.plus-content') }} <i class=" descendre fa-solid fa-caret-down"></i></span>
+                        </div>
+                        <div class="col-md-8 col-lg-5 mt-5 mt-md-0 ps-md-5 pb-5 bottle-container">
+                            <img src="assets/bottleMilk.png" alt="Bottle of Milk" class="img-fluid w-100 bottle">
+                        </div>
+                    </div>
+                </div>
+                <!-- move-wave -->
+                <div class="waveWrapper waveAnimation">
+                    <div class="waveWrapperInner bgTop">
+                      <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+                    </div>
+                    <div class="waveWrapperInner bgMiddle">
+                      <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+                    </div>
+                    <div class="waveWrapperInner bgBottom">
+                      <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+                    </div>
+                  </div>
+            </section>
+            <!-- End Home page -->
+            <!-- Start About us -->
+            <section id="a-propos" style="padding-top:120px" class="section about">
+                    <div class="container pb-5">
+                        <div class="row justify-content-center py-5 effect-card ">
+                            <div class="col-10 text-center">
+                                <p class="text-uppercase thirdColor fs-5 headEffect">{{ $t('about-us.head-fix') }}</p>
+                                <h1 :class="{'arabic-font': selectedLanguage === 'ar'}"  class="headingFont fw-bold">{{ $t('about-us.title') }}</h1>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center  ">
+                            <div class="col-md-8 col-lg-5 mb-5 mb-xl-0 photos ">
+                                <div class="row g-2 effect-card">
+                                    <div class="image col-6">
+                                        <img src="assets/about-2.jpg" alt="" class="img-fluid rounded">   
+                                    </div>
+                                    <div class="image col-6">
+                                        <img src="assets/about-5.jpg" alt="" class="img-fluid rounded">   
+                                    </div>
+                                    <div class="image col-6">
+                                        <img src="assets/about-8.jpeg" alt="" class="img-fluid rounded">   
+                                    </div>
+                                    <div class="image col-6">
+                                        <img src="assets/about.jpeg" alt="" class="img-fluid rounded">   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-lg-8 col-xl-5 mb-5 mb-lg-0  effect-card">
+                                <div style="border-color:var(--thirdColor) !important"  class="d-flex align-items-center border-start border-5 ps-3 mb-2">
+                                    <span class="thirdColor fw-bold display-3 me-3 yearsExperience"></span>
+                                    <div style="font-weight:500" class="">
+                                        <span class="d-block">{{ $t('about-us.experience.span_1') }} </span>
+                                        <span class="thirdColor text-uppercase">{{ $t('about-us.experience.span_2') }}</span>
+                                    </div>
+                                </div>
+                                <p class="fontColor ar-rlt">{{ $t('about-us.about-content') }}</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- End About us -->
+            <!-- Start reasaons for choosing us -->
+            <section class="section secondaryBg reasons">
+                <div class="container py-5">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-10 text-center">
+                            <p class="text-uppercase thirdColor fs-5 headEffect effect-card">{{ $t('why-us.section-1.head-fix') }}</p>
+                            <h1 :class="{'arabic-font': selectedLanguage === 'ar'}"  class="headingFont fw-bold effect-card">{{ $t('why-us.section-1.title') }}</h1>
+                            <p class="fontColor effect-card">{{ $t('why-us.section-1.desc') }}</p>
+                            <div class="row mt-5 pt-4 justify-content-center">
+                                <div class="col-10 col-md-5 col-lg-3 mb-3 mb-lg-0 effect-card ">
+                                    <div class="reason m-auto rounded-circle p-3 centered">
+                                        <i class="fa-solid fa-award text-white fs-3"></i> 
+                                        <p class="pt-2 fw-bold"><span class="yearsExperience"></span> {{ $t('why-us.section-1.reasons.reason_1.reason') }}</p> 
+                                    </div>
+                                    <p class="mt-3 fontColor">{{ $t('why-us.section-1.reasons.reason_1.reason-content') }}</p> </p>
+                                </div>
+                                <div class="col-10 col-md-5 col-lg-3 mb-3 mb-lg-0 effect-card ">
+                                    <div class="bg-white reason m-auto rounded-circle p-3 centered">
+                                        <i class="fa-solid fa-leaf text-white fs-3"></i> 
+                                        <p class="pt-2 fw-bold">{{ $t('why-us.section-1.reasons.reason_2.reason') }}</p> 
+                                    </div>
+                                    <p  class="mt-3 fontColor">{{ $t('why-us.section-1.reasons.reason_2.reason-content') }}</p>
+                                </div>
+                                <div class="col-10 col-md-5 col-lg-3 mb-3 mb-lg-0 effect-card ">
+                                    <div class="bg-white reason m-auto rounded-circle p-3 centered">
+                                        <i class="fa-solid fa-cow text-white fs-3"></i>
+                                        <p class="pt-2 fw-bold">{{ $t('why-us.section-1.reasons.reason_3.reason') }}</p>
+                                    </div>
+                                    <p class="mt-3 fontColor">{{ $t('why-us.section-1.reasons.reason_3.reason-content') }}</p> 
+                                </div>
+                                <div class="col-10 col-md-5 col-lg-3 mb-3 mb-lg-0 effect-card">
+                                    <div class="bg-white reason m-auto rounded-circle p-3 centered">
+                                        <i class="fa-solid fa-seedling text-white fs-3"></i> 
+                                        <p class="pt-2 fw-bold">{{ $t('why-us.section-1.reasons.reason_4.reason') }}</p>
+                                    </div>
+                                    <p class="mt-3 fontColor">{{ $t('why-us.section-1.reasons.reason_4.reason-content') }}</p>
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section reasonsCover">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-5 text-white mb-4 mb-lg-0 text-center text-lg-start">
+                            <i class="fa-regular fa-circle-check thirdColor display-5 "></i>
+                            <h1 :class="{'arabic-font': selectedLanguage === 'ar'}"  class="headingFont display-5 mt-2 ar-rlt">{{ $t('why-us.section-2.part_1.title') }}</h1>
+                            <p class="ar-rlt" style="color:#c4c3c3">{{ $t('why-us.section-2.part_1.desc') }}</p>
+                        </div>
+                        <div class="col-md-8 col-lg-5 text-white text-center text-lg-start">
+                            <i class="fa-solid fa-truck thirdColor display-5"></i>
+                            <h1 :class="{'arabic-font': selectedLanguage === 'ar'}"  class="headingFont display-5 mt-2 ar-rlt">{{ $t('why-us.section-2.part_2.title') }}</h1>
+                            <p class="ar-rlt" style="color:#c4c3c3">{{ $t('why-us.section-2.part_2.desc') }}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End reasaons for choosing us -->
+            <!-- Start our services  -->
+            <section id="services" class="section secondaryBg services">
+                <div class="container">
+                    <div class="row justify-content-center effect-card ">
+                        <div class="col-10 text-center">
+                            <p class="text-uppercase thirdColor effect-card fs-5 headEffect">{{ $t('our-services.head-fix') }}</p>
+                            <h1 :class="{'arabic-font': selectedLanguage === 'ar'}"  class="headingFont fw-bold">{{ $t('our-services.title') }}</h1>
+                            <p class="fontColor">{{ $t('our-services.desc') }}</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-5 pt-5">
+                        <div class="col-10 col-md-5 col-lg-3 effect-card bg-white p-4 rounded service position-relative mb-5 mb-lg-0">
+                            <img src="assets/service-1.jpg" alt="animaux" class="service-img rounded-circle position-absolute ">
+                            <div class="pt-5">
+                                <h5 class="headingFont fw-bold mb-3 ar-rlt">{{ $t('our-services.services.service_1.title') }}</h5>
+                                <p class="fontColor ar-rlt">{{ $t('our-services.services.service_1.desc') }}</p>
+                            </div>
+                        </div>
+                        <div class="col-10 col-md-5 col-lg-3 effect-card bg-white p-4 rounded mx-md-2 service position-relative mb-5 mb-lg-0">
+                            <img src="assets/service-2.jpeg" alt="Vétérinaire" class="service-img rounded-circle position-absolute">
+                            <div class="pt-5">
+                                <h5 class="headingFont fw-bold mb-3 ar-rlt">{{ $t('our-services.services.service_2.title') }}</h5>
+                                <p class="fontColor ar-rlt">{{ $t('our-services.services.service_2.desc') }}</p>
+                            </div>
+                        </div>
+                        <div class="col-10 col-md-5 col-lg-3 effect-card bg-white p-4 rounded service position-relative mb-5 mb-lg-0">
+                            <img src="assets/service-3.jpg" alt="Processus" class="service-img rounded-circle position-absolute">
+                            <div class="pt-5">
+                                <h5 class="headingFont fw-bold mb-3 ar-rlt">{{ $t('our-services.services.service_3.title') }}</h5>
+                                <p class="fontColor ar-rlt">{{ $t('our-services.services.service_3.desc') }}<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End our services  -->
+            <!-- Start Products  -->
+            <section class="section products-container">
+                <div class="container">
+                    <div class="row justify-content-center py-5 effect-card">
+                        <div class="col-10 text-center">
+                            <p class="text-uppercase thirdColor fs-5 headEffect">{{ $t('products.head-fix') }}</p>
+                            <h1 :class="{'arabic-font': selectedLanguage === 'ar'}"  class="headingFont fw-bold">{{ $t('products.desc') }}</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center products pt-lg-5">
+                        <div class="col-10 col-md-5 col-xl-3 mb-3 mb-lg-0 effect-card">
+                            <img src="assets/product-1.jpg" alt="" class="product-img rounded-circle">
+                            <p class="mt-4 lead text-uppercase fontColor">Douceur de Fromage</p>
+                        </div>
+                        <div class="col-10 col-md-5 col-xl-3 mb-3 mb-lg-0 effect-card">
+                            <img src="assets/product-2.jpg" alt="" class="product-img rounded-circle">
+                            <p class="mt-4 lead text-uppercase fontColor">P'tit grec</p>
+                        </div>
+                        <div class="col-10 col-md-5 col-xl-3 mb-3 mb-lg-0 effect-card">
+                            <img src="assets/product-3.jpg" alt="" class="product-img rounded-circle">
+                            <p class="mt-4 lead text-uppercase fontColor">le lait</p>
+                        </div>
+                        <div class="col-10 col-md-5 col-xl-3">
+                            <img src="assets/product-4.jpg" alt="sunaup" class="product-img rounded-circle effect-card">
+                            <p class="mt-4 lead text-uppercase fontColor">sun up</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button style="width:fit-content" class="btn btn-effect thirdBg mt-5 text-white p-3 px-5 fs-5 ">{{ $t('products.button') }}</button>
+                    </div>
+                </div>
+            </section>
+            <!-- End Products  -->
+            <!-- video  -->
+            <section class="video w-100 overflow-hidden position-relative">
+                <video autoplay muted loop id="myVideo" class="position-absolute w-100 object-fit-contain">
+                    <source src="assets/video-6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            <!-- video  -->
+            <!-- Start team Section  -->
+            <section class="section team-members secondaryBg">
+                <div class="container-lg">
+                    <div class="row justify-content-center py-5 effect-card">
+                        <div class="col-10 text-center">
+                            <p class="text-uppercase thirdColor fs-5 headEffect">{{ $t('team.head-fix') }}</p>
+                            <h1 :class="{'arabic-font': selectedLanguage === 'ar'}"  class="headingFont fw-bold">{{ $t('team.desc') }}</h1>
+                        </div>
+                    </div>
+                    <div class="row services-content align-items-center justify-content-center g-0 mt-4">
+                        <div class="col-10 col-md-5 col-lg-3 mb-3 mb-lg-0 position-relative overflow-hidden member effect-card">
+                            <img style="border-radius: 20px;" src="assets/team-1.webp" class="img-fluid">
+                            <div class="infos position-absolute mainBg text-white rounded-end p-3 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="d-block fs-4">{{ $t('team.members.member_1.name') }}</span>
+                                    <span class="text-muted fw-bold">{{ $t('team.members.member_1.job') }}</span>
+                                </div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="col-10 col-md-5 col-lg-3 mx-md-3 mb-3 mb-lg-0 position-relative overflow-hidden member effect-card">
+                            <img style="border-radius: 20px;" src="assets/team-1.webp" class="img-fluid">
+                            <div class="infos position-absolute mainBg text-white rounded-end p-3 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="d-block fs-4">{{ $t('team.members.member_2.name') }}</span>
+                                    <span class="text-muted fw-bold">{{ $t('team.members.member_2.job') }}</span>
+                                </div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="col-10 col-md-5 col-lg-3 mb-md-0 position-relative overflow-hidden member effect-card">
+                            <img style="border-radius: 20px;" src="assets/team-1.webp" class="img-fluid">
+                            <div class="infos position-absolute mainBg text-white rounded-end p-3 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="d-block fs-4">{{ $t('team.members.member_3.name') }}</span>
+                                    <span class="text-muted fw-bold">{{ $t('team.members.member_3.job') }}</span>
+                                </div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End team Section  -->
+            <!-- Start Testimony  -->
+            <section class="section">
+                <div class="container-lg">
+                    <div class="row justify-content-center py-5 effect-card">
+                        <div class="col-10 text-center">
+                            <p class="text-uppercase thirdColor fs-5 headEffect">{{ $t('testimonials.head-fix') }}
+                            </p>
+                            <h1 :class="{'arabic-font': selectedLanguage === 'ar'}"  class="headingFont fw-bold">{{ $t('testimonials.desc') }}</h1>
+                        </div>
+                    </div>
+                    <div class="row align-items">
+                    <div class="swiper rounded">
+                        <div class="swiper-wrapper ">
+                        <div class="row services-content d-flex justify-content-center g-0 swiper-slide">
+                            <div class="col-md-8 col-lg-5 text-center effect-card">
+                            <div class="swiper-slide p-3 text-center mb-3">
+                                <img class="rounded-circle person" src="assets/team-1.jpg">
+                                <p class="mt-3 ">"{{ $t('testimonials.testimonial_1.comment') }}"</p>
+                                <div>
+                                <h5 class="fw-bold">{{ $t('testimonials.testimonial_1.name') }}</h5>
+                                <div class="mb-3">
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                    <i class="fa-solid thirdColor fa-star-half-stroke"></i>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+        
+                            <div class="col-md-8 col-lg-5 text-center effect-card">
+                            <div class="swiper-slide p-3 text-center mb-3">
+                                <img class="rounded-circle person" src="assets/testimonial-3.jpg">
+                                <p class="mt-3">"{{ $t('testimonials.testimonial_2.comment') }}"</p>
+                                <div>
+                                <h5 class="fw-bold">{{ $t('testimonials.testimonial_2.name') }}</h5>
+                                <div class="mb-3">
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                    <i class="fa-solid thirdColor fa-star-half-stroke"></i>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+        
+                        <div class="row services-content d-flex align-items-center justify-content-center g-0 swiper-slide">
+                            <div class="col-md-8 col-lg-5 text-center effect-card">
+                            <div class="swiper-slide p-3 text-center mb-3">
+                                <img class="rounded-circle person" src="assets/team-2.jpg">
+                                <p class="mt-3">"{{ $t('testimonials.testimonial_3.comment') }}"</p>
+                                <div>
+                                <h5 class="fw-bold">{{ $t('testimonials.testimonial_3.name') }}</h5>
+                                <div class="mb-3">
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                    <i class="fa-solid thirdColor fa-star"></i>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+        
+                            <div class="col-md-8 col-lg-5 text-center effect-card">
+                            <div class="swiper-slide p-3 text-center mb-3">
+                                <img class="rounded-circle person" src="assets/testimonial-1.jpg">
+                                <p class="mt-3">"{{ $t('testimonials.testimonial_4.comment') }}"</p>
+                                <div class="mb-3">
+                                <h5 class="fw-bold">{{ $t('testimonials.testimonial_4.name') }}</h5>
+                                <i class="fa-solid thirdColor fa-star"></i>
+                                <i class="fa-solid thirdColor fa-star"></i>
+                                <i class="fa-solid thirdColor fa-star"></i>
+                                <i class="fa-solid thirdColor fa-star"></i>
+                                <i class="fa-regular thirdColor fa-star"></i>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination mt-5"></div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Testimony  -->
+            <!-- Start Footer  -->
+            <section class="section  secondaryBg footer">
+                <div class="container-lg">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-3 my-3 text-center">
+                        <span :class="{'arabic-font': selectedLanguage === 'ar'}"  class="fw-bold fs-4 headingFont">{{ $t('contact-data.title') }}</span>
+                        <div class="mt-3">
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-geo-alt pe-2"></i>
+                            <p class="text-muted">{{ $t('contact-data.address') }}</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-telephone pe-2"></i>
+                            <p class="text-muted">05282-49186</p>
+                        </div>
+                        </div>
+                        <div class="icons d-flex justify-content-center align-items-center">
+                        <a class="centered mainColor text-decoration-none rounded-circle" href="https://instagram.com/rafii.officiel?igshid=NGVhN2U2NjQ0Yg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="centered mainColor text-decoration-none rounded-circle ms-2" href="https://www.facebook.com/Rafii.Officiel?mibextid=rS40aB7S9Ucbxw6v" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="centered mainColor text-decoration-none rounded-circle mx-2" href="mailto:contact@silda.ma"><i class="fa-regular fa-envelope" target="_blank"></i></a>
+                        <a class="centered mainColor text-decoration-none rounded-circle" href="https://ma.linkedin.com/company/rafii" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-3 my-3 mx-lg-5 text-center">
+                        <span :class="{'arabic-font': selectedLanguage === 'ar'}"  class="fw-bold fs-4 headingFont">{{ $t('contact-data.quickLinks') }}</span>
+                        <ul class="mt-3 menuList m-0 p-0">
+                        <li class="mb-2"><a class="text-muted text-decoration-none" href="#home">{{ $t('navbar.link_1') }}</a></li>
+                        <li class="mb-2"><a class="text-muted text-decoration-none" href="#a-propos">{{ $t('navbar.link_2') }}</a></li>
+                        <li class="mb-2"><a class="text-muted text-decoration-none" href="#services">{{ $t('navbar.link_3') }}</a></li>
+                        <li><a class="text-muted  text-decoration-none" href="contact.html">{{ $t('navbar.link_4') }}</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 col-lg-3 my-3 text-center">
+                        <span :class="{'arabic-font': selectedLanguage === 'ar'}"  class="fw-bold fs-4 headingFont">{{ $t('contact-data.openning.title') }}</span>
+                        <div class="mt-3">
+                            <p class="mb-1">{{ $t('contact-data.openning.days') }}</p>
+                            <span class="fw-bold">{{ $t('contact-data.openning.time') }}</span>
+                        </div>
+                        <div class="mt-3">
+                            <p class="mb-1">{{ $t('contact-data.openning.closed') }}</p>
+                            <span class="fw-bold text-danger">{{ $t('contact-data.openning.closedText') }}</span>
+                        </div>
+                    </div> 
+
+                </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-fluid">
+                    <div class="row py-4 px-2 mainBg text-white justify-content-center align-items-center">
+                        <div class="col-10 col-md-5 mb-2 mb-md-0 text-center">
+                            <div> <span class="fontColor">{{ $t('footer.copyrights.part-1') }}</span>, {{ $t('footer.copyrights.part-2') }} &copy;</div>
+                        </div>
+                        <div class="col-10 col-md-5 text-center">
+                            <div><span class="fontColor">{{ $t('footer.designed.part-1') }} </span> {{ $t('footer.designed.part-2') }}  <span class="fontColor"> {{ $t('footer.designed.part-3') }} </span> {{ $t('footer.designed.part-4') }} </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Footer  -->
+            <button id="scrollToTopBtn" class="mainBg btn-effect text-white rounded-circle"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+        </script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                direction: 'horizontal',
+                loop: true,
+                pagination: {
+                el: '.swiper-pagination',
+                },
+                autoplay: {
+                    delay: 3000, 
+                },
+            });
+        </script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js.map"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
