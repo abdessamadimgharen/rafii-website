@@ -10,5 +10,7 @@
 @keyframes up-down {100% {transform: translateY(-20px);}}
 #scrollToTopBtn {animation:move-up 0.8s infinite alternate}
 @keyframes move-up{50%{transform: translateY(-5px);}100%{transform: translateY(0px);}}
-.headEffect::after {content:'';position: absolute;width: 30px;height:3px;background:var(--thirdColor);top:50%; transform: translateY(-50%);margin-left: 10px;animation: top-bottom 1s alternate infinite;}
-@keyframes  top-bottom  {100%{transform: translateY(-5px);}}
+@media(min-width: 992px) {
+    .headEffect::after {content:'';position: absolute;width: 30px;height:3px;background:var(--thirdColor);top:50%; transform: translateY(-50%);margin-left: 10px;animation: top-bottom 1s alternate infinite;}
+    @keyframes  top-bottom  {100%{transform: translateY(-5px);}}
+}
