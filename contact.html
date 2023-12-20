@@ -30,40 +30,14 @@
             <!-- Start Navbar  -->
             <nav class="navbar navbar-shadow navbar-expand-lg navbar-light mainBg fixed-top">
                 <div class="container">
-                <a href="index.html" class="navbar-brand brand-font fs-1 rounded-circle">
-                    <span class="fw-bold text-white">R</span>AFII<i class="fa-solid fa-leaf text-white fs-4"></i>
-                </a>
-                <button
-                    class="navbar-toggler "
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#main-nav"
-                    aria-controls="main-nav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div
-                    class="collapse navbar-collapse justify-content-end align-center"
-                    id="main-nav"
-                >
+                    <a href="index.html" class="navbar-brand brand-font fs-1 rounded-circle">
+                        <span class="fw-bold text-white">R</span>AFII<i class="fa-solid fa-leaf text-white fs-4"></i>
+                    </a>
                     <ul class="navbar-nav ul-list" :class="{'flex-row-reverse':selectedLanguage === 'ar' }">
                         <li class="nav-item px-3 position-relative fit-width d-flex align-items-center">
                             <i class="fa-solid fa-arrow-left-long text-white back-icon"></i> <a  :class="{'arabic-font': selectedLanguage === 'ar'}"  href="index.html" class="nav-link custom-hover-effect text-white text-uppercase">{{ $t('contact-section.back-button') }}</a>
                         </li>
-                        <li class="nav-item px-3 position-relative fit-width d-flex align-items-center justify-content-center">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <i class="fa-solid fa-globe text-white"></i>
-                                <select v-model="selectedLanguage" @change="changeLanguage" class="form-select form-select-sm mainBg text-white border-0" aria-label="Small select example">
-                                    <option value="fr">FR</option>
-                                    <option value="ar">AR</option>
-                                </select>
-                            </div>
-                        </li>
                     </ul>
-                </div>
                 </div>
             </nav>
             <!-- End Navbar  -->
