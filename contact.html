@@ -33,11 +33,11 @@
                     <a href="index.html" class="navbar-brand brand-font fs-1 rounded-circle">
                         <span class="fw-bold text-white">R</span>AFII<i class="fa-solid fa-leaf text-white fs-4"></i>
                     </a>
-                    <div :class="{'flex-row-reverse':selectedLanguage === 'ar' }">
-                        <div class=" px-3 position-relative fit-width d-flex align-items-center">
-                            <i class="fa-solid fa-arrow-left-long text-white back-icon"></i> <a  :class="{'arabic-font': selectedLanguage === 'ar'}"  href="index.html" class="nav-link custom-hover-effect text-white text-uppercase">{{ $t('contact-section.back-button') }}</a>
-                        </div>
-                    </div>
+                    <ul class="navbar-nav ul-list" :class="{'flex-row-reverse':selectedLanguage === 'ar' }">
+                        <li class="nav-item px-3 position-relative fit-width d-flex align-items-center">
+                            <i class="fa-solid fa-arrow-left-long text-white back-icon"></i> <a  :class="{'arabic-font': selectedLanguage == 'ar'}"  href="index.html" class="nav-link custom-hover-effect text-white text-uppercase">{{ $t('contact-section.back-button') }}</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
             <!-- End Navbar  -->
