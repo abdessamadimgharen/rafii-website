@@ -30,7 +30,7 @@
                     <span class="mainBg rounded-circle"></span>
             </div>
             <!-- Start Navbar  -->
-            <nav class="navbar navbar-expand-lg navbar-light mainBg fixed-top">
+            <nav class="navbar navHome navbar-expand-lg navbar-light mainBg fixed-top">
                 <div class="container">
                 <a href="index.html" class="navbar-brand fs-1 brand-font rounded-circle">
                     <span class="fw-bold text-white">R</span>afii<i class="fa-solid fa-leaf text-white fs-4"></i>
@@ -38,7 +38,7 @@
                 <li class="nav-item px-3 position-relative fit-width d-flex align-items-center justify-content-center  d-md-none">
                     <div class="d-flex align-items-center justify-content-center">
                         <i class="fa-solid fa-globe text-white"></i>
-                        <select v-model="selectedLanguage" @change="changeLanguage" class="form-select form-select-sm mainBg text-white border-0" aria-label="Small select example">
+                        <select style="background: transparent" v-model="selectedLanguage" @change="changeLanguage" class="form-select form-select-sm mainBg text-white border-0" aria-label="Small select example">
                             <option value="fr">FR</option>
                             <option value="ar">AR</option>
                         </select>
