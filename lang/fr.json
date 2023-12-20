@@ -143,7 +143,7 @@
     "contact-section":{
         "head-fix":"Restons en Contact",
         "desc":"Des questions ? Contactez-nous directement via nos réseaux sociaux !",
-        "back-button":"RETOUR À L'ACCUEIL",
+        "backButton":"RETOUR À L'ACCUEIL",
         "whatsapp": {
             "title" :"WhatsApp",
             "desc":"Connectez-vous avec nous sur WhatsApp pour des réponses rapides",
